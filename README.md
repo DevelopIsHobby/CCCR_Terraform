@@ -3,101 +3,74 @@
     </div>
     <div align= "center"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🐶개발환경 </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;"> </li>통합개발환경(IDE) : Intellij<br></li>JDK버전 : JDK 17<br></li>스프링부 버전 : 3.2.5<br></li>데이터베이스 : MariaDB<br></li>빌드 툴 : Gradle<br> </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;"> </li>리눅스 : <b>우분투</b></div> 
     </div>
     <div align= "center"> 
-    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🧸구현기능 </h2>  
+    <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🧸파일 구성 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;">
-    <i>무한스크롤</i><br>
-    <i>좋아요</i><br>
-    <i>스크랩 & 마이페이지</i><br>
-    <i>검색 + 태그</i><br>
-    <i>파일첨부 & 썸네일</i><br>
-    <i>날짜 업데이트</i> <br>
-    <i>게시글 CRUD</i> <br>
-    <i>댓글 CRUD</i>
+        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/a0b1369b-5358-47f1-af0e-7486f3783f7e" width="700" height="600">
+        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/eba76516-1ef9-4e54-86a6-f00810b31fea" width="710" height="80">
    </div> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  :paw_prints: 아키텍처 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;">
-        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/4ae34536-acc3-47b7-9345-472d700d3e8d">
+        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/be5c0179-3627-4734-9d3b-5129b4c5b291">
     </div> 
     <div align= "center"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🌹기능설명 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;">
-  <h3>1. 무한스크롤</h3>
-  <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/f0cbbbda-f8ec-41a3-85f4-f0f8f9e15dad"width="800" height="400" >
+  <h3>1. Bastion 서버 로드 밸런싱</h3>
+  <details>
+      <h5>Bastion을 타겟 그룹으로 설정 한 로드 밸런서 IP 접속</h5>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/e8088f9a-d451-4a5f-bca0-c12a3c3102d7"width="700" height="150" ><br><br>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/480744e8-7e74-4d9e-9ff7-78ff1ee81c70"width="700" height="150" >
     </details>
 
-   <h3>2. 좋아요</h3>
+   <h3>2. Web 서버 로드 밸런싱</h3>
       <details>
-        <img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/3aaede2d-a9c7-4019-b4cc-48478ef71bb4" width="800" height="400"></details>
+      <h5>Web을 타겟 그룹으로 설정 한 로드 밸런서 IP 접속</h5>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/f0bd6648-89fd-41f2-ac7e-f33d49e74d3a"width="700" height="150" ><br><br>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/0e324127-7626-4fbd-a1e0-5ccdd3418a8a"width="700" height="150" ></details>
+      
+  <h3>3. RDS Replica</h3>
+    <details>
+      <h5>RDS가 정상적으로 생성되었는지 확인</h5>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/4c07a473-d390-4e36-9104-70431a8c9ff6"width="900" height="100" ><br><br>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/b7183f78-7087-47be-9298-765d13c5ea7e"width="900" height="100" >
+      <h5>Replica 생성 확인</h5>
+      <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/57fe02c9-b9ed-4f03-afd0-fae5cd601e24"width="900" height="130" ></details>
 
-  <h3>3. 스크랩 & 마이페이지</h3>
-    <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/48855487-d365-4045-ae18-efe6c0391413" width="800" height="400"></details>
-
-   <h3>4. 검색 + 태그</h3>
+   <h3>4. AutoScaling</h3>
       <details>
-        <img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/cbab2be1-70a8-4e8c-a268-479817c5c506" width="800" height="400"></details>
-
-   <h3>5. 파일첨부 & 썸네일</h3>
-      <details>
-        <img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/e87b680f-711b-42f7-b5bb-41d64ca1854c" width="800" height="400">
-          <h5>사진 클릭시 원본 파일 애니메이션</h5>
+        <h5>오토스케일링 그룹 확인</h5>
+        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/7f044f14-ba23-44af-b56a-49d93b8dcc9a" width="900" height="250">
+        <h5>4개의 인스턴스 추가(오토스케일링 그룹 희망 용량 1로 설정)</h5>
+        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/016f64c7-5730-47f2-aa96-8db822fec604" width="800" height="350"><br>
       </details>
-        
 
-   <h3>6. 게시글 CRUD</h3> 
-   <details>
-       <h6>게시글 등록</h6>
-          <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/e18c5fce-2612-478e-9c1e-1a046fd4c083"  width="800" height="400">
-          </details>
-    <h6>게시글 수정</h6>
-       <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/410263ce-ca74-4629-91f1-d06c9e45ecc4"  width="800" height="400">
-          </details>
-    <h6>게시글 삭제</h6>
-              <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/2107edc0-2700-4162-9f2c-fe0b0519a610"  width="800" height="400">
-          </details>
-    </details>
-    
-   <h3>7. 댓글 CRUD</h3> 
-   <details>
-    <h6>댓글 등록</h6>
-          <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/bbdac3ca-1f92-4f5e-bbe7-57632ab1e8dc3"  width="800" height="400">
-          </details>
-    <h6>댓글 수정 및 삭제</h6>
-       <details><img src="https://github.com/DevelopIsHobby/MyBoard/assets/107912101/5bf3b4cb-a0a7-4666-acf4-0e2791157d644"  width="800" height="400">
-          </details>
-    </details>
    </div>
    </div> 
     </div>
     <div align= "center">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
-    <div style="margin: 0 auto; text-align: center;" align= "center"> <img src="https://img.shields.io/badge/Java-007396?style=plastic&logo=Java&logoColor=white">
-          <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=plastic&logo=Spring Boot&logoColor=white">
-          <img src="https://img.shields.io/badge/MariaDB-003545?style=plastic&logo=MariaDB&logoColor=white">
-          <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=plastic&logo=Javascript&logoColor=white">
-          <img src="https://img.shields.io/badge/jQuery-0769AD?style=plastic&logo=jQuery&logoColor=white">
-          <br/><img src="https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=HTML5&logoColor=white">
-          <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=plastic&logo=Bootstrap&logoColor=white">
+    <div style="margin: 0 auto; text-align: center;" align= "center">
+          <img src="https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=Linux&logoColor=black">
+          <img src="https://img.shields.io/badge/Terraform-623CE4?style=plastic&logo=Terraform&logoColor=white">
           </div>
     </div>
 <div align="center">
   <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">😃 소감 🥲</h2>
-    :star:그동안 웹에 대해 공부하면서 넣어보고 싶었던 기능들을 모두 구현해 볼 수 있어서 매우 뿌듯하다.<br>
-    :star:JPA와 Gardle을 활용해 볼 수 있어서 좋았다.<br>
-    :sweat_drops:무한스크롤에서 위치를 기억시켜 List 버튼을 클릭했을 때 원래 있던 위치로 가게 하는 것을 구현하지 못했다.<br>
-    :sweat_drops:스프링 시큐리티 적용 못한 것이 아쉽다.<br>
-    :punch:일정 시간 동안 일정 수 이상의 추천을 받을 경우 핫 게시판이 되게 하는 기능도 넣어보고 싶다.
+    :star:AWS 콘솔에서 일일히 만들고 지워야 했던 것에 비해 매우 편리하게 서비스를 구성할 수 있었다.<br>
+    :sweat_drops:모듈을 좀 더 세분화 할 수 있었다면 좋았을 것 같다.<br>
 </div>
 
 
 <div align= "center">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🧑‍💻 Contact me </h2> <br> 
-    <div align= "center"> <a href=https://www.notion.so/05ab0f771bb5433faebb8061defc48c4?pvs=4> <img src="https://img.shields.io/badge/Notion-000000?style=plastic&logo=Notion&logoColor=white&link=https://www.notion.so/05ab0f771bb5433faebb8061defc48c4?pvs=4"> </a>
+    <div align= "center"> 
+        <a href="https://github.com/DevelopIsHobby"> 
+            <img src="https://img.shields.io/badge/GitHub-ffffff?style=plastic&logo=GitHub&logoColor=black&link=https://github.com/DevelopIsHobby"> 
+        </a>
+        <a href=https://www.notion.so/05ab0f771bb5433faebb8061defc48c4?pvs=4> <img src="https://img.shields.io/badge/Notion-000000?style=plastic&logo=Notion&logoColor=white&link=https://www.notion.so/05ab0f771bb5433faebb8061defc48c4?pvs=4"> </a>
           </div>  <br> 
     <div align= "center">  </div> 
 </div>
-
-
-   
