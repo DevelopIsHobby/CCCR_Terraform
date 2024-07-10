@@ -19,7 +19,7 @@
    </div> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  :paw_prints: 아키텍처 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;">
-        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/0aeec101-3c54-4adc-a9fb-1771d4e74029">
+        <img src="https://github.com/DevelopIsHobby/CCCR_Terraform/assets/107912101/4ae34536-acc3-47b7-9345-472d700d3e8d">
     </div> 
     <div align= "center"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🌹기능설명 </h2>  
